@@ -16,7 +16,7 @@ time = int(input('Введите время в секундах - '))
 hour = time // 3600
 minut = (time - hour * 3600) // 60
 second = time - (hour * 3600 + minut * 60)
-print(f'{hour} : {minut} : {second}')
+print(f'{hour:02} : {minut:02} : {second:02}')
 
 # Задание № 3
 n = int(input('Введите число n = '))
@@ -29,8 +29,6 @@ while m >= 1:
     m = m // 10
     if m % 10 > maxz:
         maxz = m % 10
-    if m > 9:
-        continue
     else:
         print(maxz)
         break
@@ -55,7 +53,7 @@ b = int(input('общий результат в км нужно пробежат
 day = 1
 rday = a
 while rday < b:
-    a = a + (a * 10) / 100
+    a = a + a * 0.1
     day += 1
     rday = a
 print('Номер дня', day)
