@@ -54,3 +54,4 @@ def summa ():
         print(f'Сумма чисел {summa_res}')
     print(f'Финальная сумма  {summa_res}')
 summa()
+# Задание № 6
